@@ -3,147 +3,296 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Statistics-2 | Extra Activity 2</title>
+<title>Venkat | Statistics-2 Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f7fb;
-    color:#333;
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+color:#222;
 }
 
-header{
-    background:#2563eb;
-    color:white;
-    padding:50px 20px;
-    text-align:center;
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:999;
 }
 
-header h1{
-    font-size:40px;
-    margin-bottom:10px;
+nav h2{
+color:#2563eb;
 }
 
-header p{
-    font-size:18px;
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
 }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:40px;
+margin-bottom:30px;
+color:#2563eb;
+text-align:center;
 }
 
 .card{
-    background:white;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
-    padding:30px;
-}
-
-.card h2{
-    color:#2563eb;
-    margin-bottom:20px;
-}
-
-.card h3{
-    margin-top:30px;
-    margin-bottom:15px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+margin-top:25px;
 }
 
 .card p{
-    line-height:1.7;
-    margin-bottom:15px;
-}
-
-iframe{
-    width:100%;
-    height:750px;
-    border:none;
-    border-radius:10px;
+line-height:1.8;
 }
 
 .button{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    transition:0.3s;
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+transition:.3s;
 }
 
 .button:hover{
-    background:#1d4ed8;
+background:#1d4ed8;
 }
 
 img{
-    width:100%;
-    margin-top:20px;
-    border-radius:10px;
-    border:1px solid #ddd;
+width:100%;
+margin-top:20px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
 }
 
 footer{
-    margin-top:50px;
-    background:#2563eb;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#111827;
+color:white;
+padding:40px;
+text-align:center;
 }
+
+footer a{
+color:#60a5fa;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+padding:15px 20px;
+}
+
+nav ul{
+gap:12px;
+font-size:14px;
+}
+
+.title{
+font-size:30px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<header>
-<h1>Statistics-2</h1>
-<p>Monte Carlo Simulation Portfolio</p>
-</header>
+<nav>
 
-<div class="container">
+<h2>Venkat</h2>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#activity">Extra Activity 2</a></li>
+<li><a href="#screenshot">Screenshot</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Statistics-2 Portfolio</h1>
+
+<p>Monte Carlo Simulation using Google Colab</p>
+
+<a class="btn" href="#activity">View Activity</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About</h2>
 
 <div class="card">
 
-<h2>Extra Activity 2</h2>
-
 <p>
-Click the button below to open the Google Colab notebook.
+
+This webpage contains my submission for <b>Statistics-2 Extra Activity 2</b>.
+
+The objective of this activity is to perform a Monte Carlo Simulation in Python to verify a theoretical probability. The experiment was implemented in Google Colab and the results obtained through simulation closely match the theoretical value.
+
 </p>
 
-<a href="https://colab.research.google.com/drive/1qjH7Qf-O_77ge2wU4wnJSobpsIiZ5HTJ?usp=sharing"
-   target="_blank"
-   style="display:inline-block;
-          padding:12px 20px;
-          background:#2563eb;
-          color:white;
-          text-decoration:none;
-          border-radius:8px;">
+</div>
+
+</section>
+
+<section id="activity">
+
+<h2 class="title">Extra Activity 2</h2>
+
+<div class="card">
+
+<h3>Experiment</h3>
+
+<p>
+
+Roll two fair six-sided dice repeatedly. A player randomly chooses one of the following bets:
+
+<ul style="margin-left:25px;margin-top:15px;">
+<li>Under 7</li>
+<li>Over 7</li>
+<li>Exactly 7</li>
+</ul>
+
+<br>
+
+A Monte Carlo Simulation with thousands of trials is used to estimate the expected gain and compare it with the theoretical expected gain.
+
+</p>
+
+<a class="button"
+href="https://colab.research.google.com/drive/1qjH7Qf-O_77ge2wU4wnJSobpsIiZ5HTJ?usp=sharing"
+target="_blank">
+
 Open Google Colab Notebook
+
 </a>
 
-<h3>Activity 2 Screenshot</h3>
+</div>
+
+</section>
+
+<section id="screenshot">
+
+<h2 class="title">Activity 2 Screenshot</h2>
+
+<div class="card">
 
 <p>
-Replace <strong>screenshot.png</strong> with the screenshot of this page after the notebook has loaded.
+
+Replace the image below with your screenshot after opening the notebook.
+
 </p>
 
-<img src="screenshot.png" alt="Activity 2 Screenshot">
+<img src="screenshot.png" alt="Activity Screenshot">
 
 </div>
 
-</div>
+</section>
 
 <footer>
-<p>© 2026 Venkat Badhrinarayanan | Statistics Portfolio</p>
+
+<h3>Venkat Badhrinarayanan</h3>
+
+<br>
+
+<p>Statistics-2 Portfolio</p>
+
+<br>
+
+<a href="https://colab.research.google.com/drive/1qjH7Qf-O_77ge2wU4wnJSobpsIiZ5HTJ?usp=sharing" target="_blank">
+
+Google Colab Notebook
+
+</a>
+
 </footer>
 
 </body>
